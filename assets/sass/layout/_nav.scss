@@ -1,0 +1,36 @@
+.nav-left{
+    // margin-top: 3rem;
+     position: fixed;
+     width: 13rem;
+     height: 95%;
+     background-color: $green;
+   
+     &__ul{
+         margin-top: 5rem;
+         text-transform: uppercase;
+         list-style: none;
+        // display: flex;
+        // justify-content: center;
+        // align-items:center 
+
+         
+         
+     }
+
+        &__img{
+         background-color: $black-light;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 100%;
+        // position: absolute;
+        
+         
+    }
+}
+
+.nav-left a{
+    text-decoration: none;
+    color: $black;
+    padding: 0.5rem;
+    
+}

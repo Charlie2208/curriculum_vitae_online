@@ -1,0 +1,79 @@
+ .container{
+    font-family: 'Lato', sans-serif;
+     background-color: #ffffff;
+     width: 95%;
+   
+     margin: 1em;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(6, 1fr);
+    
+ }
+
+ .container > .header,
+ .container > .nav-left,
+ .container > .content {
+     padding: 20px;
+    //  border: 1px solid #000000;
+    border-bottom: 1px solid $black-light;
+ }
+
+.container .header,
+.container .content {
+    grid-column: 3/6;
+}
+
+@media screen and (max-width: 768px){
+    .container .nav-left {
+        grid-column: 1/-1;
+        position: static;
+        width: 95%;
+        height: 200px;
+        overflow: auto;
+         white-space: nowrap;
+      //   display: inline-block;
+      //   text-align: center;
+      //   margin-top: 0;
+     }
+    
+     .container .nav-left__ul{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 0.93rem; 
+        grid-column: 1/-1;
+     }
+
+     
+    .container .header {
+        grid-column: 1/-1;
+     }
+
+     .container .content {
+        grid-column: 1/-1;
+     }
+
+     
+}
+
+// .container >*{
+//     background-color: brown;
+//     border: 1px solid black;
+//     color: white;
+//     display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+// }
+
+// header, article, .experiencia, .educacion, .habilidades, .contacto{
+//     grid-column: 2 / span 3;
+// }
+
+// .nav-left{
+//     grid-column: 1;
+//     grid-row: 1 ;
+    
+//     width:2%;
+//     height: 100%;
+//     // position: fixed;
+// }

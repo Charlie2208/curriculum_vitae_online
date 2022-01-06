@@ -1,0 +1,39 @@
+.header{
+    // margin-top: 3rem;
+    text-align: center;
+    
+    &__1{
+        text-transform: uppercase;
+        
+       
+    }
+
+    &__1-p{
+        // position: absolute;
+        // top: 8rem;
+        color: $black-light;
+        
+    }
+
+    &__p{
+        margin-top: 8rem;
+        color: $black-light;
+        font-size: $small;
+    }
+
+    &__iconos{
+        margin-top: 3rem;
+        color: $black-light;
+    
+        
+        
+    }
+    
+}
+
+header i{
+    padding-left: 1rem;
+    text-decoration: none;
+    color: $black-light;
+    
+}
